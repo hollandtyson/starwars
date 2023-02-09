@@ -1,7 +1,7 @@
 ---
 title: "Visualizing Starwars characters"
-author: "YOU"
-date: "`r Sys.Date()`"
+author: "Holland Tyson"
+date: "02-9-2023"
 output: 
   html_document: 
     fig_height: 4
@@ -18,7 +18,7 @@ library(tidyverse)
 ggplot(data = starwars, 
        mapping = aes(x = height, y = mass, color = gender, size = birth_year)) +
   geom_point(color = "#30509C") +
-  labs(size = "Birth year", x = "Height", y = "Mass")
+  labs(size = "Birth year", x = "Height", y = "Mass", title = "Visualizing Starwars Characters")
 ```
 
 ### Stretch goal: Add labels for title, x and y axes, and size of points.
